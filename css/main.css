@@ -145,6 +145,132 @@ p {
         max-width: 1170px;
     }
 }
+/*
+=============== 
+Navbar
+===============
+*/
+
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--clr-white);
+    box-shadow: var(--dark-shadow);
+    width: 100%;
+    z-index: 2;
+
+}
+
+.navbar-center{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.nav-icons{
+    display: none;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.nav-header h3{
+    margin-bottom: 0;
+}
+
+.nav-toggle{
+    background: transparent;
+    border: transparent;
+    font-size: 1.5rem;
+    color: var(--clr-primary-2);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.nav-toggle:hover{
+    transform: scale(1.2);
+}
+
+.nav-link{
+    display: block;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--clr-grey-1);
+    transition: var(--transition);
+}
+
+.nav-link:hover{
+    color: var(--clr-primary-1);
+    background: var(--clr-primary-3);
+    padding-right: 2.25rem;
+}
+
+
+.nav-links{
+    height: 0;
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+.show-links{
+    height: 280px;
+}
+
+@media screen and (min-width:992px){
+    .navbar{
+        padding: 1rem 2rem;
+    }
+    .nav-toggle{
+        display: none;
+    }
+
+    .navbar-center{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-links{
+        height: auto;
+        display: flex;
+    }
+
+    .nav-header{
+        padding: 0 0;
+    }
+
+    .nav-link{
+        padding: 0 0;
+        margin-right: 0.75rem;
+    }
+
+    .nav-link:hover{
+        padding: 0;
+        color: var(--clr-primary-2);
+        background: transparent;
+    }
+
+    .nav-icons{
+        display: flex;
+    }
+
+    .nav-icon{
+        color: var(--clr-primary-2);
+        font-size: 1.2rem;
+        margin-right: 0.75rem;
+
+    }
+
+    .nav-icon:hover{
+        color: var(--clr-primary-3);
+    }
+}
 
 /*
 =============== 
