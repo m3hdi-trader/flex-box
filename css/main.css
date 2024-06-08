@@ -313,3 +313,85 @@ Services
         margin-bottom: 0.5rem;
     }
 }
+
+/*
+=============== 
+Articles
+===============
+*/
+
+.article-card{
+    background: var(--clr-grey-4);
+    margin-bottom: 2rem;
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+}
+
+.article-card:hover{
+    box-shadow: var(--dark-shadow);
+    transform: scale(1.02);
+}
+
+.article-img-container{
+    position: relative;
+}
+
+.article-img{
+    height: 15rem;
+    object-fit: cover;
+}
+
+.article-category{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: var(--clr-primary-3);
+    color: var(--clr-white);
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0;
+}
+
+.article-info{
+    padding: 1.25rem 1.5rem;
+}
+
+.article-title{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-footer p{
+    margin-bottom: 0;
+    color: var(--clr-primary-2);
+}
+
+.article-footer a{
+    color: var(--clr-primary-2);
+}
+
+.article-btn{
+    text-align: center;
+}
+
+@media screen and (min-width:768px){
+    .articles-center{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .article-card{
+        flex: 0 0 calc(50% - 2rem);
+    }
+
+}
+@media screen and (min-width:1170px){
+    .article-card{
+        flex: 0 0 calc(33.333% - 2rem);
+    }
+
+}
